@@ -1,0 +1,11 @@
+git clone https://github.com/s9405/epg1_git.git
+cd epg1_git/
+git branch hw-s9405
+git checkout rebase-me
+git rebase hw-s9405
+git checkout hw-s9405
+git merge rebase-me
+git merge origin/merge-me
+nano README.md
+git add README.md
+git commit -m "fix conflict"
